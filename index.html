@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,28 +24,19 @@
             height: 400px;
         }
         .button-container {
-            text-align: center;  /* Center-align buttons */
-            margin-top: 20px;    /* Space above buttons */
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007BFF;  /* Bootstrap primary color */
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-        }
-        .button:hover {
-            background-color: #0056b3;  /* Darker shade for hover effect */
+            display: flex;
+            justify-content: space-between; /* Space out buttons to the far sides */
+            align-items: center; /* Vertically center-align if needed */
+            margin-top: 20px;
+            padding: 0 20px; /* Add padding to avoid buttons being too close to the edges */
         }
         .clickable-image {
             display: block;
-            max-width: 100%;  /* Make sure the image scales responsively */
-            margin: auto;
+            max-width: 100px;  /* Set a maximum width for images */
+            height: auto;
+        }
+        .hidden {
+            display: none; /* Hide elements when not needed */
         }
     </style>
 </head>
@@ -83,9 +72,9 @@
     </div>
 
 
-    <!-- Click to next page -->
     <div class="button-container">
-        <a href="pat2.html">
+        <!-- Next Button -->
+        <a href="pat2.html" class="clickable-image-container next">
             <img src="next_page_button.png" alt="Next Page" class="clickable-image">
         </a>
     </div>
