@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs for Explaining Model Prediction for Hip Replacement</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto 1fr;  /* 2 columns: one for labels, one for content */
+            grid-template-rows: repeat(4, auto);  /* 4 rows with auto height */
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            align-items: center;  /* Center align items vertically within each cell */
+        }
+        .label {
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Graphs</h1>
+    <p>Please review the graphs on this page and then return to the survey form.</p>
+    <div class="grid-container">
+        <!-- Row 1 -->
+        <div class="label">(a)</div>
+        <div class="grid-item">
+            <iframe src="graph_plots/all_filters_grad_cam_relu_plot.html" width="100%" height="100%"></iframe>
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="label">(b)</div>
+        <div class="grid-item">
+            <iframe src="graph_plots/all_filters_grad_cam_abs_plot.html" width="100%" height="100%"></iframe>
+        </div>
+        
+        <!-- Row 3 -->
+        <div class="label">(c)</div>
+        <div class="grid-item">
+            <iframe src="graph_plots/edge_activation_graph_plot.html" width="100%" height="100%"></iframe>
+        </div>
+        
+        <!-- Row 4 -->
+        <div class="label">(d)</div>
+        <div class="grid-item">
+            <iframe src="graph_plots/all_filters_time_act_plot.html" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</body>
+</html>
