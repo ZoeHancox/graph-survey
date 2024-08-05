@@ -23,34 +23,16 @@
             border: 1px solid #ccc;
             height: 400px;
         }
-        .button-container {
-            text-align: center;  /* Center-align buttons */
-            margin-top: 20px;    /* Space above buttons */
-        }
         .button-container-flex {
-            display: flex;         /* Use flexbox layout */
-            justify-content: center; /* Center buttons horizontally */
-            gap: 20px;            /* Space between buttons */
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007BFF;  /* Bootstrap primary color */
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-        }
-        .button:hover {
-            background-color: #0056b3;  /* Darker shade for hover effect */
+            display: flex;          /* Use flexbox layout */
+            justify-content: space-between; /* Space out buttons to the far sides */
+            margin-top: 20px;       /* Space above buttons */
+            padding: 0 20px;       /* Add padding to avoid buttons being too close to the edges */
         }
         .clickable-image {
             display: block;
-            max-width: 20%;  /* Make sure the image scales responsively */
-            max-width: 100;
+            max-width: 100px;  /* Set a maximum width for images */
+            height: auto;
         }
     </style>
 </head>
@@ -85,21 +67,13 @@
         </div>
     </div>
 
-
     <div class="button-container-flex">
-        <div class="button-container">
-            <a href="index.html">
-                <img src="previous_page_button.png" alt="Previous Page" class="clickable-image">
-            </a>
-        </div>
-        <div class="button-container">
-            <a href="pat2.html">
-                <img src="next_page_button.png" alt="Next Page" class="clickable-image">
-            </a>
-        </div>
+        <a href="index.html">
+            <img src="previous_page_button.png" alt="Previous Page" class="clickable-image">
+        </a>
+        <a href="pat2.html">
+            <img src="next_page_button.png" alt="Next Page" class="clickable-image">
+        </a>
     </div>
-
-
-
 </body>
 </html>
